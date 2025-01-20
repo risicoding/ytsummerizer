@@ -7,7 +7,7 @@ ${transcript}
 Using the information above, summarize the video in a way that highlights its most important aspects and delivers actionable insights or takeaways when applicable.
 `;
 
-export const secondPrompt = () => `
+export const secondPrompt = (summary:string) => `
 This is a summary of a YouTube video created by an AI. Your task is to iterate over this summary and enhance it. Go deeper into the details wherever possible, expand on key points, provide additional context or examples, and make the summary more comprehensive and useful for the consumer.
 
 Additionally:
@@ -17,7 +17,7 @@ Additionally:
 - Add actionable suggestions, tips, or recommendations when relevant.
 - Use engaging elements like emojis to make the content fun and approachable without compromising professionalism.
                                                                                                                                                                                                                                            Original Summary:
-[Paste the AI-generated summary here]
+${summary}
 
 Enhanced Summary:
 - Revise and restructure the original summary as per the above guidelines.
